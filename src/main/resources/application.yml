@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/vehicle_insurance
+    username: postgres
+    password: 1234
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  sql:
+    init:
+      mode: always
+      platform: postgres
+
+# Configuración de logging
+logging:
+  level:
+    root: INFO
+
+# Seguridad: puedes usar uno u otro
+app:
+  api-key: 123456789   # Para seguridad por API Key
+  jwt:
+    secret: claveSuperSecreta123
+    expiration: 3600 # segundos (1 hora)
