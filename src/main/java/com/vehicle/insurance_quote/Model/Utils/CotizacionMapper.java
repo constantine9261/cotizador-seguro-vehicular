@@ -13,7 +13,6 @@ public class CotizacionMapper {
 
     private static final ObjectMapper mapper = new ObjectMapper();
 
-    // ya tienes: toEntity(...) y toResponse(...)
 
     public static CotizacionResponse fromJson(String json) {
         try {

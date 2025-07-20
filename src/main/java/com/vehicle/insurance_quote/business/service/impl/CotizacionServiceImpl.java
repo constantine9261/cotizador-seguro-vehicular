@@ -20,7 +20,7 @@ import java.time.Duration;
 import java.util.List;
 
 @Service
-@Slf4j // Para habilitar los logs con SLF4J
+@Slf4j
 public class CotizacionServiceImpl implements ICotizacionService {
 
     private CotizacionRepository cotizacionRepository;
